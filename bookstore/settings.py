@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x3ug-_$x0x96i!@v9w6=xlk(yzbag*40%(fwks+7fxj04o5f7*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bookstore-env-23119233.eba-b8224ji6.us-west-2.elasticbeanstalk.com','467437dbd0bb46ee9e055995e8ed0c0b.vfs.cloud9.eu-west-1.amazonaws.com']
+ALLOWED_HOSTS = ['2c616632bfdf424a94f368161c2a66ad.vfs.cloud9.eu-west-1.amazonaws.com', '23119233-bookstore-env.eba-z8cgd734.us-west-2.elasticbeanstalk.com/']
 
 
 # Application definition
