@@ -47,7 +47,7 @@ def edit_book(request, id):
     form = EditBookForm(instance=book)
     # checking if the request is POST
     if request.method == 'POST':
-        # filling the form with all the request data 
+        # filling the form with all the request data
         form = EditBookForm(request.POST, request.FILES, instance=book)
         # checking if the form's data is valid
         if form.is_valid():

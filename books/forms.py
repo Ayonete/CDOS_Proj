@@ -4,7 +4,7 @@ from django import forms
 
 # declaring the ModelForm
 class EditBookForm(ModelForm):
-    
+
     class Meta:
         # the Model from which the form will inherit from
         model = Book
