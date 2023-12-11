@@ -10,8 +10,8 @@ def sign_up(request):
         form = UserSignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            un = form.cleaned_data.get('username')
-            messages.success(request, 'Account created for {}.'.format(un))
+            un = form.cleaned_data.get('username') # pylint: disable=invalid-name
+            messages.success(request, f'Account created for {un}.')
             return redirect('sign_in')
 
     elif request.method == "GET":

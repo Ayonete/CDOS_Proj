@@ -2,14 +2,15 @@
 This module is for views which holds the logic for
 processing the web requests and rendering the appropriate template. 
 """
-from .forms import EditBookForm
+
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.shortcuts import render
+from .forms import EditBookForm
 from .models import Book
 
 
 # this is a view for listing all the books
+# pylint: disable=no-member
+# pylint: disable=unused-variable
 def home(request):
     # retrieving all the books from the database
     books = Book.objects.all()

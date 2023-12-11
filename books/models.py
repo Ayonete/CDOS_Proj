@@ -6,6 +6,7 @@ from django.db import models
 
 # Create your models here.
 # the Book model with its fields
+# pylint: disable=too-few-public-methods
 class Book(models.Model):
     """ this class defines books model"""
     title = models.CharField(max_length=100)
