@@ -1,3 +1,7 @@
+"""
+This module is for views which holds the logic for
+processing the web requests and rendering the appropriate template. 
+"""
 from .forms import EditBookForm
 from django.shortcuts import render, redirect
 from django.http import HttpResponse

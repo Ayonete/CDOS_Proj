@@ -1,8 +1,13 @@
+"""
+this module represents the book table for this application which we need for
+several functions across the application that are related to data such as CRUD functions
+"""
 from django.db import models
 
 # Create your models here.
 # the Book model with its fields
 class Book(models.Model):
+    """ this class defines books model"""
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=10, decimal_places=2)

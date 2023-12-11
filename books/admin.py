@@ -1,3 +1,6 @@
+"""
+This module is intended for administrative tasks
+"""
 from django.contrib import admin
 # from the models.py file import Book
 from .models import Book

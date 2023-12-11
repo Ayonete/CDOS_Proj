@@ -1,3 +1,6 @@
+"""
+This module defines URL routes fo rthe entire application. 
+"""
 # importing the django's in-built admin url
 from django.contrib import admin
 # importing path and include from django's in-built urls

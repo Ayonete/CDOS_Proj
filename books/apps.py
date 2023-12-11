@@ -1,3 +1,6 @@
+"""
+apps.py file for configuring the books application
+"""
 from django.apps import AppConfig
 
 

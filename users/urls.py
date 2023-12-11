@@ -1,3 +1,6 @@
+"""
+url handler for users applications
+"""
 from django.urls import path
 
 from . import views

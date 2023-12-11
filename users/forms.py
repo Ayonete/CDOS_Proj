@@ -1,9 +1,13 @@
+"""
+forms module for user application. will be used for user authorization
+"""
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.core import validators
 
 class UserSignUpForm(UserCreationForm):
+    """ this class defines user authentication forms"""
     email = forms.EmailField(validators=[validators.validate_email])
 
     min_length = 2
@@ -26,6 +30,7 @@ class UserSignUpForm(UserCreationForm):
         ])
 
     class Meta:
+        """ this class defines table fields"""
         model = User
         fields = ['username', 'first_name',
         'last_name','email', 'password1', 'password2']

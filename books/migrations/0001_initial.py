@@ -4,7 +4,7 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
+    """ this class defines book model """
     initial = True
 
     dependencies = [

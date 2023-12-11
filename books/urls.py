@@ -1,3 +1,8 @@
+"""
+This module handles the URL routes for bookstore. It matches 
+the paths to their correspoding views definitions to properly 
+route web requests from clients
+"""
 from django.urls import path
 # this imports all the views from the views.py
 from . import views
