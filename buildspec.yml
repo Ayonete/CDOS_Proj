@@ -5,7 +5,7 @@ phases:
         runtime-versions:
             python: 3.11
         commands:
-        - pip install --upgrade 
+        - pip install --upgrade pip
         - pip install pylint pylint-django
         # Install dependencies needed for running the static analysis
         - pip install -r requirements.txt pylint
