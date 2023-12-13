@@ -11,8 +11,6 @@ class Book(models.Model):
     """ this class defines books model"""
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=100)
-    # price = models.DecimalField(max_digits=10, decimal_places=2)
-    # isbn = models.CharField(max_length=100)
     review = models.TextField(default="nothing to say", max_length=500)
     rating = models.IntegerField(default="5")
     # this is the image for a book, the image will be uploaded to images folder

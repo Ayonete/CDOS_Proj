@@ -15,13 +15,11 @@ class EditBookForm(ModelForm):
         # the Model from which the form will inherit from
         model = Book
         # the fields we want from the Model
-        fields = '__all__'
+        fields = ['title', 'author', 'review','rating', 'image']
         # styling the form with bootstrap classes
         widgets = {
              'title': forms.TextInput(attrs={'class': 'form-control'}),
              'author': forms.TextInput(attrs={'class': 'form-control'}),
-            #  'price': forms.TextInput(attrs={'class': 'form-control'}),
-            #  'isbn': forms.TextInput(attrs={'class': 'form-control'}),
              'review': forms.Textarea(attrs={'class': 'form-control'}),
              'rating': forms.Textarea(attrs={'class': 'form-control'})
              #'image': forms.FileInput(attrs={'class': 'form-control'}),
