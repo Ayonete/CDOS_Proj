@@ -23,7 +23,7 @@
             <div class="row">
                 <!-- using a for loop to loop through all the books -->
                 {% for book in books %}
-                <div class="col-md-4">
+                <div class="col-12">
                     <div class="card my-2">
                         <a href="">
                             <!-- this is the book image -->
@@ -33,6 +33,10 @@
                             <!-- this is the book title -->
                             <h4 class="card-text">{{ book.title }}</h4>
                         </div>
+                        <!-- <div class="card-body">-->
+                            <!-- this is the book title -->
+                        <!--    <h4 class="card-text">{{ book.review }}</h4>-->
+                        <!--</div>-->
                         <a href="{% url 'book-detail' book.id %}" class="m-2 btn btn-outline-dark btn-sm">View Book</a>
                     </div>
                 </div>

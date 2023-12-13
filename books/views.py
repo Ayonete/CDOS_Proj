@@ -37,6 +37,7 @@ def add_book(request):
            title = data['title'],
            author = data['author'],
            isbn = data['isbn'],
+        #   review = data['review'],
            price = data['price'],
            image = image
         )

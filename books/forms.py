@@ -22,5 +22,6 @@ class EditBookForm(ModelForm):
              'author': forms.TextInput(attrs={'class': 'form-control'}),
              'price': forms.TextInput(attrs={'class': 'form-control'}),
              'isbn': forms.TextInput(attrs={'class': 'form-control'}),
+            #  'review': forms.TextInput(attrs={'class': 'form-control'}),
              'image': forms.TextInput(attrs={'class': 'form-control'}),
         }
