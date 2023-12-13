@@ -11,8 +11,9 @@
             <div style="height: 90vh">
                 <img class="img-fluid text-center" style="max-width: 100%; max-height: 100%" src="{{ book.image.url }}" alt="">
                 <h5 class="text-muted">Book: {{ book.author }}</h5>
-                <small>ISBN: {{ book.isbn }}</small><br>
-                <small>Price: {{ book.price }}</small><br>
+                <!--<small>ISBN: {{ book.isbn }}</small><br>-->
+                <!--<small>Price: {{ book.price }}</small><br>-->
+                <small>Rating: {{ book.rating }}/5</small><br>
                 <a href="{% url 'edit-book' book.id %}" class="btn btn-success btn-sm">Edit Book</a>
                 <a href="{% url 'delete-book' book.id %}" class="btn btn-danger btn-sm">Delete Book</a>
             </div>

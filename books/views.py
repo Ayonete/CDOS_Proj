@@ -36,9 +36,10 @@ def add_book(request):
         book = Book.objects.create(
            title = data['title'],
            author = data['author'],
-           isbn = data['isbn'],
-        #   review = data['review'],
-           price = data['price'],
+        #   isbn = data['isbn'],
+           review = data['review'],
+           rating= data['rating'],
+        #   price = data['price'],
            image = image
         )
         # going to the home page

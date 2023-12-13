@@ -1,4 +1,3 @@
-<!-- inheriting from the base file -->
 {% extends 'books/base.html' %}
 
 <!-- this will help render the images -->
@@ -13,35 +12,43 @@
                 <h4 class="card-header px-3">Menu</h4>
                 <ul class="list-group list-group-light list-group-small">
                     <li class="list-group-item px-3"><a href="">Home</a></li>
-                    <li class="list-group-item px-3"><a href="">Sign Me Out</a></li>
                 </ul>
                 <a href="{% url 'add-book' %}" class="m-2 btn btn-dark btn-sm">Add Book</a>
             </div>
         </div>
         <!-- books here -->
         <div class="col-md-9 mt-3">
-            <div class="row">
-                <!-- using a for loop to loop through all the books -->
-                {% for book in books %}
-                <div class="col-12">
-                    <div class="card my-2">
-                        <a href="">
+            <!-- using a for loop to loop through all the books -->
+            {% for book in books %}
+            <div class="card my-2">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <a href="{% url 'book-detail' book.id %}">
                             <!-- this is the book image -->
-                            <img src="{{ book.image.url }}" class="card-img-top" style="height:275px" />
+                            <img src="{{ book.image.url }}" class="card-img" style="max-height:275px; width:auto;" />
                         </a>
+                    </div>
+                    <div class="col-md-8">
                         <div class="card-body">
                             <!-- this is the book title -->
                             <h4 class="card-text">{{ book.title }}</h4>
                         </div>
-                        <!-- <div class="card-body">-->
+                        <div class="card-body">
                             <!-- this is the book title -->
-                        <!--    <h4 class="card-text">{{ book.review }}</h4>-->
-                        <!--</div>-->
-                        <a href="{% url 'book-detail' book.id %}" class="m-2 btn btn-outline-dark btn-sm">View Book</a>
+                            <quote class="card-text">{{ book.review }}</quote><br>
+                        </div>
+                        <div class="card-body">
+                            <!-- this is the book rating -->
+                            <p class="card-text">Rating: {{ book.rating }}/5</p>
+                            <div>
+                                 <a href="{% url 'book-detail' book.id %}" class="btn btn-outline-dark btn-sm">View Book</a>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>

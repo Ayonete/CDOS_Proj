@@ -21,22 +21,33 @@
                         <input required type="text" name="author" class="form-control" placeholder="Book Author">
                     </div>
                     <!-- this is the label and input for the Price -->
-                    <div class="mb-3">
-                        <label class="form-label font-weight-bold">Price</label>
-                        <input required type="text" name="price" class="form-control" placeholder="Price">
-                    </div>
+                    <!--<div class="mb-3">-->
+                    <!--    <label class="form-label font-weight-bold">Price</label>-->
+                    <!--    <input required type="text" name="price" class="form-control" placeholder="Price">-->
+                    <!--</div>-->
                     <!-- this is the label and input for the ISBN -->
+                    <!--<div class="mb-3">-->
+                    <!--    <label class="form-label font-weight-bold">ISBN</label>-->
+                    <!--    <input required type="text" name="isbn" class="form-control" placeholder="ISBN">-->
+                    <!--</div>-->
+                    <!-- this is the label and input for the Review -->
                     <div class="mb-3">
-                        <label class="form-label font-weight-bold">ISBN</label>
-                        <input required type="text" name="isbn" class="form-control" placeholder="ISBN">
+                        <label class="form-label font-weight-bold">Review</label>
+                        <textarea required name="review" class="form-control" placeholder="What did you think about it?" rows="4"></textarea>
+                    <!--<input required type="text" name="review" class="form-control" placeholder="What did you think about it?">-->
+                    </div>
+                    <!-- this is the label and input for the rating-->
+                    <div class="mb-3">
+                        <label class="form-label font-weight-bold">Rating</label>
+                        <input required type="text" name="rating" class="form-control" placeholder="Rate out of 5">
                     </div>
                     <!-- this is the label and input for the Image -->
                     <div class="mb-3">
-                        <label class="form-label font-weight-bold">Upload Image:</label>
+                        <label class="form-label font-weight-bold">Upload Cover:</label>
                         <input required type="file" name="image-file" class="form-control" id="customFile" />
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-success btn-block mb-4">submit</button>
+                    <button type="submit" class="btn btn-success btn-block mb-4">Add Book and Review</button>
                 </form>
             </div>
         </div>
